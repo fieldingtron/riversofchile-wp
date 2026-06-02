@@ -20,6 +20,10 @@ Usage:
 Password source:
   - PASSWORD environment variable, or
   - secure interactive prompt
+
+Examples:
+  PASSWORD='my-secret' ./scripts/env-sync.sh encrypt
+  PASSWORD='my-secret' ./scripts/env-sync.sh decrypt
 EOF
 }
 
@@ -31,7 +35,11 @@ need_openssl() {
 }
 
 get_password() {
-  if [[ -n "${PASSWORD:-}" ]]; then
+  if [[ "${PASSWORD+x}" == "x" ]]; then
+    if [[ -z "$PASSWORD" ]]; then
+      echo "✗ ERROR: PASSWORD is set but empty" >&2
+      exit 1
+    fi
     printf "%s" "$PASSWORD"
     return 0
   fi
@@ -62,12 +70,14 @@ ensure_backup_dir() {
 }
 
 cleanup_old_backups() {
-  mapfile -t backups < <(ls -1t "$ENV_BACKUPS_DIR"/env.*.enc 2>/dev/null || true)
-  if (( ${#backups[@]} > MAX_BACKUPS )); then
-    for old_file in "${backups[@]:MAX_BACKUPS}"; do
+  local count=0
+  local old_file
+  while IFS= read -r old_file; do
+    count=$((count + 1))
+    if (( count > MAX_BACKUPS )); then
       rm -f "$old_file"
-    done
-  fi
+    fi
+  done < <(ls -1t "$ENV_BACKUPS_DIR"/env.*.enc 2>/dev/null || true)
 }
 
 backup_encrypted_file() {
