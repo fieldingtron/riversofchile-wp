@@ -1,0 +1,152 @@
+/*
+Theme Name: The Box
+Description: Used to style the TinyMCE editor.
+*/
+
+body {
+	background-color: #fff;
+	max-width: 670px;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: 'Oxygen', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+	font-size: 14px;
+	line-height: 1.75;
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+	color: #353535;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-family: 'Oxygen', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+	color: #252525;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 1.4;
+	margin: 20px 0 10px;
+}
+
+h2 {
+	font-size: 21px;
+	line-height: 1.4;
+	font-weight: 700;
+	margin: 20px 0 10px;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 1.4;
+	font-weight: 700;
+	margin: 10px 0;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 700;
+	margin: 10px 0;
+}
+
+h5 {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 10px 0;
+}
+
+h6 {
+	font-size: 12px;
+	font-weight: 700;
+	margin: 10px 0;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+	margin-top: 0;
+}
+
+p {
+	margin: 0 0 20px;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+ul, ol {
+	margin: 0 0 20px 0;
+	padding: 0 0 0 20px;
+}
+
+ul {
+	list-style: square;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ul li,
+ol li {
+	margin: 0 0 5px 20px;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+a {
+	color: #0fa5d9;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0fa5d9;
+	text-decoration: underline;
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+blockquote {
+	font-style: italic;
+	margin: 20px 0;
+	padding: 0 15px;
+	border-left: 4px solid #ddd;
+}
+
+blockquote cite {
+	font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+	color: #252525;
+	line-height: 1.5;
+}

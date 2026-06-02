@@ -1,0 +1,117 @@
+/*
+Theme Name: The Box
+Description: Used to style blocks in the editor.
+*/
+
+.editor-styles-wrapper {
+	max-width: 100% !important; /* Override where editor-style.css is affecting this */
+}
+
+/* Typography */
+.editor-styles-wrapper .editor-post-title__input {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+.editor-styles-wrapper h1 {
+	font-size: 24px;
+	line-height: 1.4;
+}
+
+.editor-styles-wrapper h2 {
+	font-size: 21px;
+	line-height: 1.4;
+	font-weight: 700;
+}
+
+.editor-styles-wrapper h3 {
+	font-size: 18px;
+	line-height: 1.4;
+	font-weight: 700;
+}
+
+.editor-styles-wrapper h4 {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.editor-styles-wrapper h5 {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.editor-styles-wrapper h6 {
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.editor-styles-wrapper h1:first-child,
+.editor-styles-wrapper h2:first-child,
+.editor-styles-wrapper h3:first-child,
+.editor-styles-wrapper h4:first-child,
+.editor-styles-wrapper h5:first-child,
+.editor-styles-wrapper h6:first-child {
+	margin-top: 0;
+}
+
+.editor-styles-wrapper .has-large-font-size,
+.editor-styles-wrapper .has-larger-font-size {
+	line-height: 1.4;
+}
+
+/* List */
+.editor-styles-wrapper ul:not(.wp-block-gallery),
+.block-library-list ul,
+.editor-styles-wrapper ol,
+.block-library-list ol,
+.block-library-list .editor-rich-text__tinymce {
+	padding: 0 0 0 20px;
+}
+
+/* Gallery */
+.editor-styles-wrapper .wp-block-gallery,
+.editor-block-list__block .wp-block-gallery {
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+}
+
+/* Quote */
+.wp-block-quote.is-style-large,
+.wp-block-quote.is-large,
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+	font-style: italic;
+	border-left: 4px solid #ddd;
+}
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+	margin: 20px auto;
+}
+
+.wp-block-quote.is-style-large,
+.wp-block-quote.is-large {
+	margin: 30px auto;
+}
+
+.wp-block-quote.has-text-align-center {
+	border: 0;
+	padding: 0 20px;
+}
+
+.wp-block-quote cite,
+.wp-block-quote footer,
+.wp-block-quote .wp-block-quote__citation {
+	font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+	color: #252525;
+	line-height: 1.5;
+}
+
+/* Pullquote */
+.wp-block-pullquote {
+	margin: 20px 0;
+	padding: 0;
+	border: 0;
+}

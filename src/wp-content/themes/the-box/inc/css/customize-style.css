@@ -1,0 +1,81 @@
+/*
+ * The Box Plus Customizer Styles
+ * Version: 1.0.1
+ *
+ */
+
+#customize-control-thebox_sidebar_settings label {
+	display: block;
+	float: left;
+	width: 88px;
+	margin: 0 10px 10px 0;
+	position: relative;
+}
+
+#customize-control-thebox_sidebar_settings label:last-child {
+	margin-right: 0;
+}
+
+#customize-control-thebox_sidebar_settings label input {
+	position: absolute;
+	display: inline-block;
+	margin: 0;
+	visibility: hidden;
+}
+
+#customize-control-thebox_sidebar_settings div {
+	width: 80px;
+	height: 60px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	padding: 4px;
+	border: 2px solid #eee;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#customize-control-thebox_sidebar_settings input[type="radio"]:checked + div {
+	border-color: #7ad03a;
+}
+
+#customize-control-thebox_sidebar_settings div:hover {
+	border-color: #999;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#customize-control-thebox_sidebar_settings .content-sidebar {
+	background-image: url('../images/content-sidebar.png');
+}
+
+#customize-control-thebox_sidebar_settings .sidebar-content {
+	background-image: url('../images/sidebar-content.png');
+}
+
+#customize-control-thebox_sidebar_settings .one-column {
+	background-image: url('../images/content.png');
+}
+
+#customize-control-thebox_sidebar_settings .grid2-sidebar {
+	background-image: url('../images/grid2-sidebar.png');
+}
+
+#customize-control-thebox_logo_settings .library .thumbnail img {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 4px;
+	margin: 10px 0 10px 0;
+}
+
+#customize-control-thebox_logo_settings .library .thumbnail:hover img {
+	background-color: #fff;
+	border-color: #2ea2cc;
+}
+
+#customize-control-thebox_analytics_settings textarea {
+	font-family: monospace;
+	font-size: 12px;
+	line-height: 1.2;
+	color: #666;
+}

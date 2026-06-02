@@ -1,0 +1,22 @@
+# Ignore everything in the WordPress root directory by default
+*
+!.gitignore
+
+# Re-allow tracking of wp-content but ignore its contents by default
+!wp-content/
+wp-content/*
+
+# Re-allow only our active custom theme
+!wp-content/themes/
+wp-content/themes/*
+!wp-content/themes/the-box/
+!wp-content/themes/the-box/**
+
+# Ignore uploads, cache, upgrades, and debug logs
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/debug.log
+
+# Do NOT track wp-config.php to protect production secrets
+wp-config.php
