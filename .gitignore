@@ -1,0 +1,11 @@
+# Local environment & secrets
+.env
+.DS_Store
+
+# Temporary scratch files
+scratch/
+.claude/
+
+# DB backups & snapshots (never committed to Git)
+db/
+db_dump.sql
